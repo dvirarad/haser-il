@@ -1,0 +1,12 @@
+name: רשימת ה-DM (שיווק ישיר ישראל)
+id: direct-mail-israel
+website: idma.org.il
+method: email
+contact_email: optout@idma.org.il
+template: direct_mail_optout
+category: [direct-mail, marketing]
+last_verified: 2026-05
+maintainer: community
+notes: >
+  ארגון שיווק ישיר ישראל מנהל רשימת הסרה מרכזית מניוזלטרים ופניות שיווקיות.
+  זכות מוחלטת להסרה לפי חוק הגנת הפרטיות.

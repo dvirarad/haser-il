@@ -1,0 +1,12 @@
+name: BDI — מידע עסקי
+id: bdi
+website: bdi.co.il
+method: email
+contact_email: privacy@bdi.co.il
+template: standard_removal
+category: [credit, people-search]
+last_verified: 2026-05
+maintainer: community
+notes: >
+  BDI מאגד מידע עסקי ואשראי על אנשים פרטיים ועסקים.
+  לפי תיקון 13 — חובת DPO ובקשות מחיקה חייבות להיענות.

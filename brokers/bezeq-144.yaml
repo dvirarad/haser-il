@@ -1,0 +1,12 @@
+name: בזק 144 / דפי זהב
+id: bezeq-144
+website: 144.co.il
+method: form
+opt_out_url: https://www.bezeq.co.il/privacypolicy/
+template: standard_removal
+category: [people-search, telecom]
+last_verified: 2026-05
+maintainer: community
+notes: >
+  מאגר ספר הטלפון הלאומי. כולל שם, טלפון וכתובת.
+  יש טופס הסרה בדף מדיניות הפרטיות.

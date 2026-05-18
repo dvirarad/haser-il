@@ -1,0 +1,19 @@
+{
+  "name": "haser-il-engine",
+  "version": "0.1.0",
+  "description": "Israeli data broker removal engine",
+  "type": "module",
+  "bin": {
+    "haser-il": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "list": "node index.js list",
+    "dry-run": "node index.js run --dry-run"
+  },
+  "dependencies": {
+    "commander": "^12.0.0",
+    "js-yaml": "^4.1.0",
+    "nodemailer": "^6.9.0"
+  }
+}

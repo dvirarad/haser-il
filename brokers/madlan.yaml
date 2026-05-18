@@ -1,0 +1,12 @@
+name: מדלן
+id: madlan
+website: madlan.co.il
+method: email
+contact_email: privacy@madlan.co.il
+template: standard_removal
+category: [people-search, real-estate]
+last_verified: 2026-05
+maintainer: community
+notes: >
+  מדלן מציגה מידע על בעלי דירות ועסקאות נכסים שכולל שמות מלאים.
+  פנייה לפי תיקון 13 לחוק הגנת הפרטיות — זכות מחיקה.

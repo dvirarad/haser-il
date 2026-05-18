@@ -1,0 +1,12 @@
+name: יד2 — חיפוש אנשים / מפרסמים
+id: yad2-people
+website: yad2.co.il
+method: email
+contact_email: privacy@yad2.co.il
+template: standard_removal
+category: [people-search, marketing]
+last_verified: 2026-05
+maintainer: community
+notes: >
+  יד2 חושפת מידע על מפרסמים (שם, טלפון) בהיסטוריית מודעות.
+  בקשת מחיקת נתונים אישיים לפי זכות המחיקה.

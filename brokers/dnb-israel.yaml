@@ -1,0 +1,12 @@
+name: D&B ישראל (דן אנד ברדסטריט)
+id: dnb-israel
+website: dbisrael.co.il
+method: email
+contact_email: privacy@dbisrael.co.il
+template: standard_removal
+category: [credit, people-search]
+last_verified: 2026-05
+maintainer: community
+notes: >
+  D&B מחזיק מידע עסקי ואשראי על עסקים ובעליהם.
+  חייב לאפשר עיון ומחיקה לפי חוק הגנת הפרטיות.

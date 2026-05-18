@@ -1,0 +1,4 @@
+node_modules/
+haser-state.json
+.env
+*.local

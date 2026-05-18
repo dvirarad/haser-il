@@ -1,0 +1,34 @@
+# Broker YAML schema — every broker file must follow this structure
+# Fields marked (required) must be present. Others are optional.
+
+# (required) Display name in Hebrew
+name: ""
+
+# (required) English/slug identifier
+id: ""
+
+# (required) Primary website
+website: ""
+
+# (required) Removal method: email | form | api | written
+method: ""
+
+# For method: email — address to send removal request to
+contact_email: ""
+
+# For method: form — URL of the opt-out / right-to-erasure form
+opt_out_url: ""
+
+# (required) Which template to use from /templates/
+template: ""  # standard_removal | direct_mail_optout | custom
+
+# Custom subject override (optional — template default used if omitted)
+subject_override: ""
+
+# Category tags
+category: []  # people-search | direct-mail | credit | real-estate | marketing | telecom
+
+# Metadata
+last_verified: ""   # YYYY-MM
+maintainer: ""      # GitHub @username or "community"
+notes: ""
