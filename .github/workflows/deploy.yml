@@ -9,9 +9,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: webapp
 
     steps:
       - uses: actions/checkout@v4
@@ -27,27 +24,26 @@ jobs:
           cache-dependency-path: webapp/pnpm-lock.yaml
 
       - name: Install dependencies
+        working-directory: webapp
         run: pnpm install --frozen-lockfile --ignore-scripts
 
-      - name: Build
-        run: pnpm run build
-        env:
-          NEXT_TELEMETRY_DISABLED: 1
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
 
       - name: Deploy to Netlify (production)
         if: github.ref == 'refs/heads/main'
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --dir=webapp/.next --prod
+        working-directory: webapp
+        run: netlify deploy --build --prod
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NEXT_TELEMETRY_DISABLED: "1"
 
       - name: Deploy preview (PRs)
         if: github.event_name == 'pull_request'
-        uses: netlify/actions/cli@master
-        with:
-          args: deploy --dir=webapp/.next
+        working-directory: webapp
+        run: netlify deploy --build
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          NEXT_TELEMETRY_DISABLED: "1"
