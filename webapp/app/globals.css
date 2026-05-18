@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0f1117;
+  --foreground: #e8eaf0;
+  --accent: #3b82f6;
+  --accent-hover: #2563eb;
+  --surface: #1a1d2e;
+  --border: #2a2d3e;
+  --muted: #6b7280;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, "Noto Sans Hebrew", Helvetica, sans-serif;
+  direction: rtl;
+}
